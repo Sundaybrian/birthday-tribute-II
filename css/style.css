@@ -126,6 +126,7 @@ section#about {
   max-width: 700px;
   background: #fff;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+  text-transform: uppercase;
 }
 
 .section-title::after {
@@ -262,7 +263,28 @@ section#gallery{
 }
 
 
-/*============= COURSE SECTION =============*/
+/*============= BFF SECTION =============*/
+section#bff{
+  position: relative;
+ 
+}
+
+.bff-img img{
+  width:100%;
+  border-radius:50%;
+}
+
+blockquote .svg-inline--fa{
+  margin:1rem;
+  color: #05E0E9;
+}
+
+.bff-hr{
+  border-top:.05rem solid #05E0E9;
+}
+
+
+
 /*============= COURSE SECTION =============*/
 
 
@@ -297,6 +319,18 @@ section#gallery{
   color: white;
 }
 
+/*============ Media queries:*/
+@media (max-width: 767px) {
+  .bff-img img{
+    max-width:50%;
+    display: block;
+    margin: 0 auto;
+    
+  }
+  
+ 
+
+ }
 
 /*============ BOOTSTRAP BREAK POINTS:
 
