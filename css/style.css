@@ -1,6 +1,7 @@
 :root {
   --primary-color: #1EBBA3;
   --rose-red: #ff2768;
+  --turquoise:#05E0E9;
 }
 
 /*============= HOME SECTION =============*/
@@ -158,13 +159,14 @@ section#about {
 section#sassy {
   background-color: #ff2768;
   margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .sassy-content{
   position: relative;
 }
 
-.sassy-content::before{
+/* .sassy-content::before{
   content:"";
   position: absolute;
   background-image: url("../img/shap-1.png");
@@ -173,13 +175,13 @@ section#sassy {
   top:-50px;
   left: 50px;
   opacity: .75;
-}
+} */
 
 
 .sassy-img img {
   width: 300px;
   height: 400px;
-  margin-bottom: -100px;
+  margin: -100px;
   margin-top: 150px;
 }
 
@@ -205,7 +207,61 @@ section#sassy {
 
 
 
-/*============= COURSE SECTION =============*/
+/*============= GALLERY SECTION =============*/
+section#gallery{
+  margin: 250px 0 120px;
+}
+
+.gallery-img{
+  position: relative;
+  margin-bottom: 15px;
+
+}
+
+.gallery-img img{
+ width: 100%;
+
+}
+
+.gallery-btn{
+  width: 150px;
+  padding: 10px 0;
+  outline: none !important;
+  border: 0;
+  border-radius: 2px;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  bottom: 0;
+  z-index: 1;
+  transform: translate(-50%,0);
+  text-transform: capitalize;
+  transition: 0.6s;
+  opacity: 0;
+}
+
+.gallery-img:hover .gallery-btn{
+  transform: translate(-50%,50%);
+  bottom:50%;
+  opacity: 1;
+}
+
+.overlay{
+  height: 0%;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  top: 0;
+  opacity:0;
+  transition: .5s;
+}
+
+.gallery-img:hover .overlay{
+  opacity: .5;
+  height: 100%;
+}
+
+
 /*============= COURSE SECTION =============*/
 /*============= COURSE SECTION =============*/
 
