@@ -5,6 +5,18 @@
 /*============= HOME SECTION =============*/
 /* -------------NAV----- */
 
+section#home{
+  margin-bottom: 80px;
+  background-color:  rgba(0,0,0,.6);
+}
+
+.offset-section:before{
+  display: block;
+  height: 4rem;
+  content: "";
+  margin-top: -4rem;
+}
+
 .navbar{
   text-transform: uppercase;
   font-weight: 700;
@@ -26,9 +38,44 @@
 .navbar-dark .navbar-nav .nav-link:hover{
   color: var(--primary-color);
 }
-/******* landing ****************/
-.home-inner{
-  background: url("../img/astronomy-constellation-dark-998641.jpg");
+
+/******banner ****************/
+/* .caption{
+  width: 100%;
+  max-width: 100%;
+  top: 38%;
+  z-index: 1;
+
+} */
+.banner{
+  position:relative;
+  width:100%;
+}
+
+.banner-img{
+  margin:80px 115px;
+  width:60%;
+}
+
+.banner-img img{
+  width:100%;
+  margin-bottom:-80px;
+}
+
+.banner-caption{
+  position: absolute;
+  left: 50%;
+  top:20%;
+}
+
+.banner-caption h1{
+  font-size:55px;
+  background: rgba(0,0,0,.75);
+  color: #fff;
+  line-height:70px;
+  padding:0 10px 0 10px;
+  text-transform: capitalize;
+
 }
 
 
