@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     // smooth scrolling
 
-    $('.navbar-nav a').on('click', function (event) {
+    $('.cf a').on('click', function (event) {
         if(this.hash!== ''){
             event.preventDefault();
 
